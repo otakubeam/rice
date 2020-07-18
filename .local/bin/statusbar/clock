@@ -26,4 +26,14 @@ case $BLOCK_BUTTON in
 	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
 esac
 
-date "+%Y %b %d (%a) $icon%I:%M%p"
+case "$(date "+%a")" in
+    "Mon") DotW="月" ;;
+    "Tue") DotW="火" ;;
+    "Wed") DotW="水" ;;
+    "Thu") DotW="木" ;;
+    "Fri") DotW="金" ;;
+    "Sat") DotW="土" ;;
+    "Sun") DotW="日" ;;
+esac
+
+date "+%Y %b %d ($DotW) %I:%M%p"

@@ -149,6 +149,7 @@ super + F3
 super + F4
 	prompt 'Hibernate computer?' 'sudo -A zzz -Z'
 super + F5 is unbound.
+	sudo systemctl start NetworkManager
 # Start torrent daemon/open interface
 super + F6
 	torwrap
@@ -156,11 +157,12 @@ super + F6
 super + F7
 	td-toggle
 # sync email
-super + F8
-	mailsync
+super + F8 is unbound.
 # Mount a USB drive or Android device
 super + {F9,F10}
 	{dmenumount,dmenuumount}
+super + F11
+	flameshot gui
 
 
 

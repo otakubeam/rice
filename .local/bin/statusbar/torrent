@@ -13,8 +13,8 @@ transmission-remote -l | grep % |
 				s/B/🕰/g;
 				s/L/🔼/g;
 				s/M/🔽/g;
-				s/N/✅/g;
-				s/Z/🌱/g" | awk '{print $2 $1}' | paste -sd ' '
+				s/N/完/g;
+				s/Z/種/g" | awk '{print $2  $1}' | paste -sd ' '
 
 case $BLOCK_BUTTON in
 	1) setsid -f "$TERMINAL" -e tremc ;;
